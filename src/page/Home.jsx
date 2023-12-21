@@ -2,10 +2,12 @@ import React, { memo } from 'react';
 import "./home.css";
 
 const products = [
-  { id: 1, name: 'Product 1', price: 10, image: "./src/images/nikeswara.png" },
+
   { id: 2, name: 'Product 2', price: 20, image: "./src/images/jordan.png" },
-  { id: 2, name: 'Product 3', price: 20, image: "./src/images/airman.png" },
-  { id: 2, name: 'Product 4', price: 20, image: "./src/images/nickeflox.png" }
+  { id: 3, name: 'Product 3', price: 20, image: "./src/images/airman.png" },
+  { id: 4, name: 'Product 4git', price: 20, image: "./src/images/nickeflox.png" },
+  { id: 5, name: 'Product 4git', price: 20, image: "./src/images/nikeflybnwdribbble.png"},
+  
   
 
   // Add more products as needed

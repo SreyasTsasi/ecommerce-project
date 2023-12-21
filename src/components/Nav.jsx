@@ -23,17 +23,72 @@ function Nav() {
     navigate("/");
   }
   return (
-    <div className='nav-container'>
-      <Toaster position="top-center" />
-      <img src="/logo.png" alt="logo" onClick={() => navigate("/")} />
-      {isLoggedin ? <div className="right profile">
-        <img src={image} alt="prifile" onClick={() => navigate("/profile")} />
-        <button onClick={logoutHandler}>Logout</button>
-      </div> : <div className="right buttons">
-        {pathname != "/register" && <button onClick={() => navigate("/register")}>Register</button>}
-        {pathname != "/login" && <button onClick={() => navigate("/login")}>Login</button>}
-      </div>}
+    <nav className="navbar navbar-expand-lg navbar-custom">
+    <div className="container-fluid">
+      <a className="navbar-brand" href="#">
+        
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon" />
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link active" aria-current="page" href="#">
+              New
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              Women
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              Men
+            </a>
+          </li>
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Kids
+            </a>
+            <ul className="dropdown-menu">
+              <li>
+                <a className="dropdown-item" href="#">
+                  Kid's store
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="#">
+                  School store
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="#">
+                  Home wear
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  
   )
 }
 

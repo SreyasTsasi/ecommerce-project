@@ -7,6 +7,7 @@ import { registerValidate } from "../helpers/validate.js";
 import { convertToBase64 } from "../helpers/convert.js";
 import { register } from "../helpers/request.js";
 import "./style.css";
+import "./Register.css";
 
 
 function Register() {

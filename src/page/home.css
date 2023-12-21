@@ -1,6 +1,4 @@
-/* home.css */
 
-/* Styles for each product item */
 .product {
     border: 1px solid #ccc;
     padding: 18px;
@@ -8,20 +6,23 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+     top:900px;
+     position: relative;
+    
      
   }
   
-  /* Styles for the product image */
   .product img {
     max-width: 50%;
     
     
-     /* Ensures the image doesn't overflow its container */
-    border-radius: 8px 8px 0 0; /* Rounded corners for the top */
-    align-self: center; /* Aligns the image to the center horizontally */
+    
+    
+    border-radius: 8px 8px 0 0; 
+    align-self: center; 
   }
   
-  /* Rest of your styles for product name and price */
+  
   .product h3 {
     margin-bottom: 1px;
     font-size: 18px;
